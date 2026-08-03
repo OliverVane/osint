@@ -1,15 +1,3 @@
-"""
-osint_domain.py - Single-file domain OSINT toolkit.
-
-Covers: DNS records, SPF/DMARC, WHOIS, RDAP, certificate-transparency
-subdomain discovery, and Wayback Machine history for a hardcoded domain,
-with a numbered action menu and JSON report export.
-
-Optional dependency for full DNS record types (MX, TXT, NS, CNAME, SOA):
-    pip install dnspython
-Without it, DNS lookups fall back to A records only (via socket).
-"""
-
 import ipaddress
 import json
 import os

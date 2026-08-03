@@ -1,21 +1,3 @@
-"""
-osint_email.py - Single-file email OSINT toolkit.
-
-Checks: format/domain validity, MX/mail server presence, disposable-email
-detection, Gravatar presence, HaveIBeenPwned breach exposure (optional API
-key), and account-existence signals on a handful of services that expose a
-public "does this email already have an account" check (the same thing their
-own login/signup forms use).
-
-Only queries public signals sites already expose to any visitor. Some may
-rate-limit automated requests. Use against emails you're authorized to
-investigate - your own accounts, or an authorized engagement.
-
-Optional dependency for MX record lookups:
-    pip install dnspython
-Without it, MX checks fall back to a weaker A-record-only check.
-"""
-
 import hashlib
 import json
 import os
@@ -35,7 +17,7 @@ except ImportError:
 # ============================================================
 # CONFIG - edit these
 # ============================================================
-EMAIL = "oliver.vane.ov@protonmail.com"
+EMAIL = "email@example.com"
 HIBP_API_KEY = ""   # optional - get one at https://haveibeenpwned.com/API/Key
 # ============================================================
 
