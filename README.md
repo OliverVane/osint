@@ -5,3 +5,4 @@ Small collection of OSINT scripts for domains, emails, IPs, metadata, and phone 
 * Update IP Geolocator
 * Enhance metadata
 * Make CLI
+* Add more!
